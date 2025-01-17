@@ -132,11 +132,11 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument(
             'ip',
-            default_value='0.0.0.0',
+            default_value='192.168.124.15',
             description='IP address of the NDI optical tracking system'),
         DeclareLaunchArgument(
             'gui',
-            default_value='false',
+            default_value='true',
             description='Launch RViz for visualization'),
     ] + nodes_to_start
     )
